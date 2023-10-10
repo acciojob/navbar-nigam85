@@ -1,1 +1,42 @@
-/*  your css code here. If applicable */
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #6e072d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Style the left and right lists */
+.left-list, .right-list {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the list items */
+.left-list li, .right-list li {
+    font-size: 18px;
+    padding: 18px 27px; /* Vertical padding equal to font size, horizontal padding 1.5 times font size */
+    border: 2px solid white;
+    border-right: none; /* Remove right border for Pricing */
+    transition: background-color 0.3s, cursor 0.3s;
+}
+
+/* Style the last item in the left list and the first item in the right list */
+.left-list li:last-child, .right-list li:first-child {
+    border-right: 2px solid white;
+}
+
+/* Change background color and cursor on hover */
+.left-list li:hover, .right-list li:hover {
+    background-color: #b90e4d;
+    cursor: pointer;
+}
